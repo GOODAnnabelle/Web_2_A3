@@ -1,0 +1,3 @@
+@echo off
+echo 正在启动慈善活动网站...
+node server.js

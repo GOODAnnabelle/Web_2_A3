@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Activity Search - Charity Activity Platform</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <h1>Charity Earth</h1>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="search.html" class="active">Activity Search</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+      <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </nav>
+  </header>
+
+  <section class="page-header">
+    <div class="container">
+      <h1>🔍 Search Environmental Charity Activities</h1>
+    </div>
+  </section>
+
+  <section class="search-section">
+    <div class="container">
+      <div class="search-container">
+        <form id="search-form" class="search-form">
+          <div class="form-group">
+            <label for="start-date">Start Date</label>
+            <input type="text" id="start-date" name="startDate" placeholder="Select date">
+          </div>
+          <div class="form-group">
+            <label for="end-date">End Date</label>
+            <input type="text" id="end-date" name="endDate" placeholder="Select date">
+          </div>
+          <div class="form-group">
+            <label for="city">City</label>
+            <input type="text" id="city" name="city" placeholder="Enter city name">
+          </div>
+          <div class="form-group">
+            <label for="category">Environmental Category</label>
+            <select id="category" name="categoryId">
+              <option value="">All Environmental Categories</option>
+              <!-- Category options will be dynamically loaded through JavaScript -->
+            </select>
+          </div>
+          <button type="submit" class="btn btn-primary">🌱 Search Green Actions</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section class="events-section">
+    <div class="container">
+      <h2 class="section-title">🌍 Search Results</h2>
+      <div class="events-container" id="search-results">
+        <!-- Search results will be dynamically loaded through JavaScript -->
+        <div class="loading">Please use the search form above to find environmental activities</div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Charity Earth</h3>
+          <p>We are committed to connecting charitable organizations with volunteers to create a better world together.</p>
+        </div>
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="search.html">Activity Search</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Contact Us</h3>
+          <p><i class="fas fa-envelope"></i> contact@charity.org</p>
+          <p><i class="fas fa-phone"></i> +86 123 4567 8910</p>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-weixin"></i></a>
+            <a href="#"><i class="fab fa-weibo"></i></a>
+            <a href="#"><i class="fab fa-qq"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Charity Earth. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+  <script src="js/search.js"></script>
+</body>
+</html>

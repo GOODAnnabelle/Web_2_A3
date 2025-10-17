@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register for Event - Charity Activity Platform</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <h1>Charity Earth</h1>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="search.html">Activity Search</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+      <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </nav>
+  </header>
+
+  <section class="page-header">
+    <div class="container">
+      <h1>📝 Register for Environmental Activity</h1>
+    </div>
+  </section>
+
+  <section class="registration-section">
+    <div class="container">
+      <div class="registration-container">
+        <div class="event-info">
+          <h2>Event Details</h2>
+          <div class="loading">Loading event information...</div>
+          <!-- Event details will be dynamically loaded through JavaScript -->
+        </div>
+        
+        <form id="registration-form" class="registration-form">
+          <div class="form-group">
+            <label for="user-name">Full Name *</label>
+            <input type="text" id="user-name" name="user-name" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="email">Email Address *</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone">
+          </div>
+          
+          <div class="form-group">
+            <label for="tickets">Number of Tickets *</label>
+            <select id="tickets" name="tickets" required>
+              <option value="1">1 Ticket</option>
+              <option value="2">2 Tickets</option>
+              <option value="3">3 Tickets</option>
+              <option value="4">4 Tickets</option>
+              <option value="5">5 Tickets</option>
+              <option value="6">6 Tickets</option>
+              <option value="7">7 Tickets</option>
+              <option value="8">8 Tickets</option>
+              <option value="9">9 Tickets</option>
+              <option value="10">10 Tickets</option>
+            </select>
+          </div>
+          
+          <button type="submit" class="btn btn-primary">Confirm Registration</button>
+        </form>
+        
+        <div id="confirmation-message" class="confirmation-message" style="display: none;">
+          <i class="fas fa-check-circle"></i>
+          <h3>Registration Successful!</h3>
+          <p>Thank you for registering! Your registration has been confirmed.</p>
+          <p>We'll send you a confirmation email shortly.</p>
+          <a href="index.html" class="btn btn-secondary">Return to Home</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Charity Earth</h3>
+          <p>We are committed to connecting environmental organizations with volunteers to protect our planet and create a green sustainable future.</p>
+        </div>
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="search.html">Environmental Action Search</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Contact Us</h3>
+          <p><i class="fas fa-envelope"></i> contact@charity.org</p>
+          <p><i class="fas fa-phone"></i> +86 123 4567 8910</p>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-weixin"></i></a>
+            <a href="#"><i class="fab fa-weibo"></i></a>
+            <a href="#"><i class="fab fa-qq"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Charity Earth. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/registration.js"></script>
+</body>
+</html>
